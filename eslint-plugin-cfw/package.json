@@ -1,0 +1,7 @@
+{
+  "name": "@sugar-candy-framework/eslint-plugin-cfw",
+  "version": "3.4.0",
+  "dependencies": {
+    "eslint": "8.4.0"
+  }
+}

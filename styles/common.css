@@ -1,0 +1,257 @@
+@import 'modern-normalize';
+@import './theme.css';
+
+html {
+
+  /*
+    Disable annoying tap highlighting on android -- we achieve a more consistent results with custom styling
+   */
+  -webkit-tap-highlight-color: transparent;
+
+  /*
+    This defines the base value for 1 rem, changing this value will scale the whole page, 
+    ie. bigger/smaller.
+   */
+  font-size: var(--cc-font-size);
+}
+
+body {
+
+  /*
+    Set the base fonts
+   */
+  font-family: var(--cc-font-family-sans-serif);
+
+  /*
+    The default (font) color
+   */
+  color: var(--cc-color);
+
+  /*
+    The body background color
+   */
+  background-color: var(--cc-background-color);
+
+  /*
+    Gives a bit more space above an below text so things don't feels so squashed.
+   */
+  line-height: 1.5;
+
+  /*
+    No device is this small
+   */
+  min-width: 275px;
+}
+
+
+/*
+ Typography
+ */
+h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0.4em 0;
+}
+
+h2 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin: 0.4em 0;
+}
+
+h3 {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin: 0.4em 0;
+}
+
+h4 {
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin: 0.4em 0;
+}
+
+h5 {
+  font-size: 0.75rem;
+}
+
+h6 {
+  font-size: 0.625rem;
+}
+
+small {
+  font-size: var(--cc-font-size-small);
+}
+
+/*
+  Some opinionated base styling 
+ */
+ 
+/*
+  Take control of :focus styling so it is more consistence across browsers -- a11y win
+ */
+
+/*
+  Remove focus outline in webkit
+ */
+:focus {
+  outline: 0;
+}
+
+/*
+  Remove dotted focus outine from selects in firefox
+ */
+select:-moz-focusring {
+  color:transparent;
+  text-shadow:0 0 0 var(--cc-color);
+}
+
+select:-moz-focusring * {
+  color: var(--cc-color);
+  text-shadow:none;
+}
+
+/*
+  Remove numbers/bullets styles from list by default as (in this context) list are normally used to order form elements rather than display an actual list.
+ */
+ul,
+ol {
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+  background-color: transparent;
+  color: var(--cc-a-color);
+  text-decoration: none;
+  transition: color var(--cc-transition-secondary);
+}
+
+a:hover,
+a:focus,
+a:active {
+  text-decoration: underline;
+}
+
+a:hover,
+a:active {
+  color: var(--cc-a-color-active);
+}
+
+/*
+  Remove link styles from anchors without an href attribute (will be styled as regular text)
+ */
+a:not([href]):not([tabindex]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+/*
+  Override line height from normalize-modern
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: var(--cc-color);
+  line-height: 1.5;
+  border-radius: var(--cc-border-radius);
+  transition: background-color var(--cc-transition-secondary),
+    box-shadow var(--cc-transition-secondary),
+    border-color var(--cc-transition-secondary),
+    opacity var(--cc-transition-secondary);
+}
+
+input,
+select,
+textarea {
+  background-clip: padding-box;
+  border: 1px solid var(--cc-border-color);
+  padding: 0.5rem 0.25rem;
+}
+
+button, a.button {
+  color: var(--cc-button-color);
+  background-color: var(--cc-button-background-color);
+  border: 1px solid transparent;
+  /* 
+    Padding is em for buttons so it scales with the button font size, so increasing the
+    font size will create a larger button and decreasing the font size will create a smaller
+    button.
+  */
+  padding: 0.5em 1em;
+  text-transform: unset;
+  font-weight: 500;
+}
+
+a.button {
+  text-align: center;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+button:not(:disabled):hover {
+  background-color: var(--cc-button-background-color-hover);
+}
+
+button:not(:disabled):active {
+  background-color: var(--cc-button-background-color-active);
+}
+
+button:focus,
+input:focus,
+select:focus,
+textarea:focus, 
+a:focus, 
+[role=menuitem]:focus,
+[role=button]:focus,
+[role=link]:focus,
+a.button.secondary:focus,
+a.button:focus,
+button.link:focus,
+button.secondary:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem var(--cc-focusring-halo-color);
+}
+
+button:focus {
+  outline: 0 !important; /* hack firefox */
+}
+
+button:disabled {
+  opacity: 0.65;
+  background-color: var(--cc-button-disabled);
+}
+button.secondary, a.button.secondary {
+  color: var(--cc-secondary-button-color);
+  background: var(--cc-secondary-button-background-color);
+  background-image: -webkit-linear-gradient(bottom, var(--cc-secondary-button-background-color), var(--cc-secondary-button-background-gradient-color));
+  background-image: -moz-linear-gradient(bottom, var(--cc-secondary-button-background-color), var(--cc-secondary-button-background-gradient-color));
+  background-image: -ms-linear-gradient(bottom, var(--cc-secondary-button-background-color), var(--cc-secondary-button-background-gradient-color));
+  background-image: -o-linear-gradient(bottom, var(--cc-secondary-button-background-color), var(--cc-secondary-button-background-gradient-color));
+  background-image: linear-gradient(to bottom, var(--cc-secondary-button-background-color), var(--cc-secondary-button-background-gradient-color));
+  box-shadow: var(--cc-secondary-button-box-shadow);
+}
+
+button.secondary:hover, a.button.secondary:hover {
+  background: var(--cc-secondary-button-background-color);
+  background-image: -webkit-linear-gradient(bottom, var(--cc-secondary-button-background-color), var(--cc-secondary-button-background-gradient-hover-color));
+  background-image: -moz-linear-gradient(bottom, var(--cc-secondary-button-background-color), var(--cc-secondary-button-background-gradient-hover-color));
+  background-image: -ms-linear-gradient(bottom, var(--cc-secondary-button-background-color), var(--cc-secondary-button-background-gradient-hover-color));
+  background-image: -o-linear-gradient(bottom, var(--cc-secondary-button-background-color), var(--cc-secondary-button-background-gradient-hover-color));
+  background-image: linear-gradient(to bottom, var(--cc-secondary-button-background-color), var(--cc-secondary-button-background-gradient-hover-color));
+  text-decoration: none;
+  box-shadow: var(--cc-secondary-button-box-shadow);
+}
+
+button.link, button.link:hover {
+  text-decoration: underline;
+  font-size: var(--cc-font-size-small);
+  background-color: var(--cc-background-color) !important;
+  padding: 0;
+  color: var(--cc-color) !important;
+  display: inline-block;
+  text-align: unset;
+  width: unset; 
+}

@@ -1,0 +1,9 @@
+{
+  "name": "@sugar-candy-framework/logger",
+  "version": "3.4.0",
+  "dependencies": {
+    "@sugar-candy-framework/tools-i18n": "3.4.0",
+    "morgan": "1.10.0",
+    "winston": "3.3.3"
+  }
+}

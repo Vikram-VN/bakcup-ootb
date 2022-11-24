@@ -1,0 +1,6 @@
+{
+  "name": "@sugar-candy-framework/prettier-config",
+  "version": "3.4.0",
+  "description": "cfw Prettier config",
+  "main": "index.js"
+}

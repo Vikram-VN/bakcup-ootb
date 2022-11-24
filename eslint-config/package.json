@@ -1,0 +1,21 @@
+{
+  "name": "@sugar-candy-framework/eslint-config",
+  "version": "3.4.0",
+  "dependencies": {
+    "@babel/core": "7.14.5",
+    "@sugar-candy-framework/eslint-plugin-cfw": "3.4.0",
+    "@sugar-candy-framework/prettier-config": "3.4.0",
+    "@babel/eslint-parser": "7.16.3",
+    "eslint": "8.4.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-import": "2.25.3",
+    "eslint-plugin-jsdoc": "37.1.0",
+    "eslint-plugin-jsx-a11y": "6.5.1",
+    "eslint-plugin-prettier": "4.0.0",
+    "eslint-plugin-react": "7.27.1",
+    "eslint-plugin-react-hooks": "4.3.0",
+    "eslint-plugin-spellcheck": "0.0.19",
+    "eslint-plugin-unicorn": "39.0.0",
+    "prettier": "2.5.1"
+  }
+}

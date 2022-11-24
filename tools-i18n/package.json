@@ -1,0 +1,17 @@
+{
+  "name": "@sugar-candy-framework/tools-i18n",
+  "version": "3.4.0",
+  "description": "Internationalization utility for the CLI tools",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "fs-extra": "9.1.0",
+    "os-locale": "5.0.0",
+    "sprintf-js": "1.1.2"
+  },
+  "devDependencies": {
+    "tmp-promise": "2.0.2"
+  }
+}

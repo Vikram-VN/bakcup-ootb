@@ -1,0 +1,9 @@
+{
+  "name": "@sugar-candy-framework/fetchers",
+  "version": "3.4.0",
+  "dependencies": {
+    "@sugar-candy-framework/commerce-utils": "3.4.0",
+    "@sugar-candy-framework/utils": "3.4.0",
+    "react": "17.0.2"
+  }
+}

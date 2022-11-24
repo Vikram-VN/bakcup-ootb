@@ -1,0 +1,8 @@
+{
+  "name": "@sugar-candy-framework/cfw-config",
+  "version": "3.4.0",
+  "files": [
+    "app-config/index.js"
+  ],
+  "dependencies": {}
+}

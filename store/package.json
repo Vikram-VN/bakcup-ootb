@@ -1,0 +1,14 @@
+{
+  "name": "@sugar-candy-framework/store",
+  "version": "3.4.0",
+  "dependencies": {
+    "@sugar-candy-framework/utils": "3.4.0",
+    "@redux-saga/core": "1.1.3",
+    "@redux-saga/is": "1.1.2",
+    "redux": "4.1.2",
+    "redux-saga": "1.1.3"
+  },
+  "resolutions": {
+    "redux": "4.0.5"
+  }
+}

@@ -1,0 +1,21 @@
+:root {
+  --cc-container-padding: 1rem;
+}
+
+body {
+   min-width: var(--cc-desktop-body-min-width);
+   max-width: var(--cc-desktop-body-max-width);
+   margin-left: auto;
+   margin-right: auto;
+}
+/*
+  Make buttons stand out as clickable elements (same cursor behavior as links)
+ */
+ button,
+ [role="button"] {
+   cursor: pointer;
+ }
+
+ button:disabled {
+   cursor: default;
+ }

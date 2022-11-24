@@ -1,0 +1,10 @@
+{
+  "name": "@sugar-candy-framework/react-ui",
+  "version": "3.4.0",
+  "dependencies": {
+    "@sugar-candy-framework/styles": "3.4.0",
+    "@sugar-candy-framework/utils": "3.4.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  }
+}

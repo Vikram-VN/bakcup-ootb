@@ -1,0 +1,11 @@
+{
+  "name": "@sugar-candy-framework/tools-util",
+  "version": "3.4.0",
+  "main": "index.js",
+  "dependencies": {
+    "@sugar-candy-framework/tools-i18n": "3.4.0",
+    "@sugar-candy-framework/http-client": "3.4.0",
+    "fs-extra": "9.1.0",
+    "yauzl": "2.10.0"
+  }
+}
